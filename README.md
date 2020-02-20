@@ -15,6 +15,12 @@ _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and 
 
 ### Physically entering DFU mode
 
+Entering DFU mode requires resetting the 8u2 or 16u2 chip by shorting the reset and ground pins.
+
+![Uno DFU reset](https://www.arduino.cc/en/uploads/Hacking/Uno-front-DFU-reset.png)
+
+For more information, check the official hacking tutorial on Arduino.cc: [Updating the Atmega8U2 and 16U2 on an Uno or Mega2560 using DFU](https://www.arduino.cc/en/Hacking/DFUProgramming8U2).
+
 ### Flashing stock or custom firmware
 
 To flash a new firmware to an Uno in DFU mode, stock or custom, use [dfu-programmer](https://dfu-programmer.github.io):
