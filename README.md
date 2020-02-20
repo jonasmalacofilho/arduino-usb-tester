@@ -6,6 +6,30 @@ Its main purpose is testing USB stacks and software, but it can also be used to 
 _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and the DFU target will need to be adjusted if a different board is used._
 
 
+## h115i-emulatinum
+
+Dumb emulation of a H115i Platinum for development of Linux/macOS drivers.
+
+Related: [liquidctl#76](https://github.com/jonasmalacofilho/liquidctl/issues/76) ("Support for Corsair H115i Platinum").
+
+
+## arduino-keyboard
+
+Archived Arduino Keyboard firmware by Darran, and corresponding blog posts.
+
+Fetched from the Wayback Machine:
+
+ - [Arduino UNO Keyboard HID part 2](https://web.archive.org/web/20130215045104/http://hunt.net.nz/users/darran/weblog/faf5e/Arduino_UNO_Keyboard_HID_part_2.html)
+ - [Arduino UNO Keyboard HID version 0.3](https://web.archive.org/web/20120127004113/http://hunt.net.nz/users/darran/weblog/b3029/Arduino_UNO_Keyboard_HID_version_03.html)
+
+
+## uno-rev3-backup
+
+Backup dump of the factory firmware from my Uno rev. 3.  Not useful as is, but could just a conversion to the correct hex format.
+
+Regardless, it is probably better to just use [Arduino-usbserial-atmega16u2-Uno-Rev3.hex](https://github.com/arduino/ArduinoCore-avr/blob/master/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex).
+
+
 ## A primer of Arduino Uno firmware flashing
 
 ### LUFA
@@ -55,25 +79,3 @@ sudo dfu-programmer atmega16u2 flash <firmware file>
 ```
 
 
-## h115i-emulatinum
-
-Dumb emulation of a H115i Platinum for development of Linux/macOS drivers.
-
-Related: [liquidctl#76](https://github.com/jonasmalacofilho/liquidctl/issues/76) ("Support for Corsair H115i Platinum").
-
-
-## arduino-keyboard
-
-Archived Arduino Keyboard firmware by Darran, and corresponding blog posts.
-
-Fetched from the Wayback Machine:
-
- - [Arduino UNO Keyboard HID part 2](https://web.archive.org/web/20130215045104/http://hunt.net.nz/users/darran/weblog/faf5e/Arduino_UNO_Keyboard_HID_part_2.html)
- - [Arduino UNO Keyboard HID version 0.3](https://web.archive.org/web/20120127004113/http://hunt.net.nz/users/darran/weblog/b3029/Arduino_UNO_Keyboard_HID_version_03.html)
-
-
-## uno-rev3-backup
-
-Backup dump of the factory firmware from my Uno rev. 3.  Not useful as is, but could just a conversion to the correct hex format.
-
-Regardless, it is probably better to just use [Arduino-usbserial-atmega16u2-Uno-Rev3.hex](https://github.com/arduino/ArduinoCore-avr/blob/master/firmwares/atmegaxxu2/arduino-usbserial/Arduino-usbserial-atmega16u2-Uno-Rev3.hex).
