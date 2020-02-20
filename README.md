@@ -1,8 +1,7 @@
 # arduino-usb-tester
 
 arduino-usb-tester is (the beginning of) a collection of Arduino firmware implementing different USB gadgets.
-Its main purpose is testing USB stacks and software.
-It can also be used to capture protocol data with access to real devices.
+Its main purpose is testing USB stacks and software, but it can also be used to capture protocol data with access to real devices.
 
 _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and the DFU target will need to be adjusted if a different board is used._
 
@@ -11,7 +10,28 @@ _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and 
 
 ### LUFA
 
+The firmware in this repository is built on top of [LUFA](https://github.com/abcminiuser/lufa), the Lightweight USB Framework for AVRs.
+
 ### Adjusting LUFA parameters and building the firmware
+
+When building LUFA examples or code based on them (like the code in this repository) it is necessary to adjust the makefile to match the chip and board being targeted.  For example, the following variables should be set when building firmware for the Uno rev. 3:
+
+```
+MCU          = atmega16u2
+ARCH         = AVR8
+BOARD        = UNO
+F_CPU        = 16000000
+F_USB        = $(F_CPU)
+```
+
+Building the firmware should be fairly straightforward:
+
+```
+make clean
+make
+```
+
+For more information, try `make help`.
 
 ### Physically entering DFU mode
 
