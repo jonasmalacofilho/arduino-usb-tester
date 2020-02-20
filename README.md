@@ -32,8 +32,6 @@ Regardless, it is probably better to just use [Arduino-usbserial-atmega16u2-Uno-
 
 ## A primer of Arduino Uno firmware flashing
 
-### LUFA
-
 The firmware in this repository is built on top of [LUFA](https://github.com/abcminiuser/lufa), the Lightweight USB Framework for AVRs.
 
 ### Adjusting LUFA parameters and building the firmware
