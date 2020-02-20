@@ -1,7 +1,7 @@
 # arduino-usb-tester
 
 arduino-usb-tester is (the beginning of) a collection of Arduino firmware implementing different USB gadgets.
-Its main purpose is testing USB stacks or pieces of stacks (for example, PyUSB).
+Its main purpose is testing USB stacks and software.
 It can also be used to capture protocol data with access to real devices.
 
 _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and the DFU target will need to be adjusted if a different board is used._
@@ -17,7 +17,7 @@ _Note: I'm using an Arduino Uno rev. 3 I had laying around; LUFA parameters and 
 
 ### Flashing stock or custom firmware
 
-To flash a new firmware to an Uno in DFU mode, stock or custom, use [dfu-programmer]:
+To flash a new firmware to an Uno in DFU mode, stock or custom, use [dfu-programmer](https://dfu-programmer.github.io):
 
 ```
 # physically set the Uno to enter DFU mode
